@@ -11,7 +11,23 @@
 </head>
 <body>
 	<h1>Menu principal</h1>
-	<a href=""><i class="fas fa-user-circle"></i></a>
+	<span id="openMenu"><i class="fas fa-user-circle"></i></span><!--menu button-->
+	<div class="sidemenu" id="sideMenu"><!--side menu-->
+		<div class="menuItems">
+			<div class="profilepic">
+				<img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/40/40159b5527e872ae1a0bc0c12b3dcfd7582d48ff_full.jpg" alt="profile picture">
+
+				<span class="closemenu" id="closeMenu">
+					<i class="fas fa-times"></i>
+				</span>
+			</div>
+
+			<span>Mon profil</span>
+			<a class="light" href="#">modifier</a>
+			<a href="#">Statistiques</a>
+			<a href="#">Déconnexion</a>
+		</div>
+	</div><!--side menu end-->
 
 	<!-- container -->
 
@@ -62,5 +78,8 @@
 			<a href="http://89.234.182.175/egames/" target="blank">EGames</a>
 		</p>
 	</footer>
+
+	<!--scripts-->
+	<script src="assets/js/custom/app.js"></script>
 </body>
 </html>

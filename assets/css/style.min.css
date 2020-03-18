@@ -1,3 +1,4 @@
+*{-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{line-height:1}
@@ -11,6 +12,15 @@ footer a{text-decoration:none;color:#2c2c2c;font-size:18px}
 .fa-instagram{position:fixed;bottom:40px;left:40px;font-size:40px;color:#f69679;border:5px solid #e3b399;background:#e3b399;border-radius:50%;width:40px;text-align:center}
 .fa-facebook-f{position:fixed;bottom:40px;left:100px;font-size:40px;color:#f69679;border:5px solid #e3b399;background:#e3b399;border-radius:50%;width:40px;text-align:center}
 .fa-youtube{position:fixed;bottom:40px;left:160px;font-size:40px;color:#f69679;border:5px solid #e3b399;background:#e3b399;border-radius:50%;width:50px;text-align:center}
+.sidemenu{position:fixed;z-index:1;right:0;top:0;width:300px;height:100vh;background:#f69679;color:#2c2c2c;padding:2rem 2rem;-webkit-box-shadow:2px 0 10px 1px #2c2c2c;box-shadow:2px 0 10px 1px #2c2c2c;-webkit-transition:right ease 500ms;transition:right ease 500ms}
+.sidemenu .menuItems{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.sidemenu .menuItems .profilepic{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:2rem}
+.sidemenu .menuItems .profilepic img{width:50%;-webkit-clip-path:circle(50% at 50% 50%);clip-path:circle(50% at 50% 50%)}
+.sidemenu .menuItems .profilepic .closemenu{cursor:pointer;font-size:1.5rem;width:-webkit-min-content;width:-moz-min-content;width:min-content;height:-webkit-min-content;height:-moz-min-content;height:min-content;padding:0}
+.sidemenu .menuItems span{padding:1rem 1rem;width:100%;color:inherit;font-size:1.2rem}
+.sidemenu .menuItems a{padding:1rem;width:100%;color:inherit;font-size:1.2rem;text-decoration:none;-webkit-transition:-webkit-transform ease-in-out 100ms;transition:-webkit-transform ease-in-out 100ms;transition:transform ease-in-out 100ms;transition:transform ease-in-out 100ms,-webkit-transform ease-in-out 100ms}
+.sidemenu .menuItems a:hover{border-left:solid #e3b399 5px;-webkit-transform:translateX(20px);transform:translateX(20px)}
+.sidemenu .menuItems .light{font-size:1rem;padding:.5rem;margin-left:2rem}
 #box1,#box2,#box3{margin:0 30px 0 30px;background:#f69679;border:4px solid #e3b399;border-radius:20px;-webkit-transition:.2s;transition:.2s}
 body,html{overflow:hidden;height:100%;font-family:'Raleway',sans-serif;background:#cbf8eb;background:radial-gradient(circle,#cbf8eb 0,#99e3d8 35%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbf8eb",endColorstr="#99e3d8",GradientType=1);-webkit-animation:oPacity 3s ease-in-out;animation:oPacity 3s ease-in-out}
 body h1,html h1{background:#f69679;text-align:center;color:#2c2c2c;font-size:35px;text-transform:uppercase;border:4px solid #e3b399;margin:30px 380px 0 380px;border-radius:10px;padding-top:5px;padding-bottom:5px;-webkit-box-shadow:1px 2px 2px 2px rgba(0,0,0,0.2);box-shadow:1px 2px 2px 2px rgba(0,0,0,0.2)}
@@ -29,8 +39,3 @@ body h1,html h1{background:#f69679;text-align:center;color:#2c2c2c;font-size:35p
 .circle img:hover{width:100%;height:100%}
 .fa-user-circle{font-size:60px;float:right;margin:-60px 50px 0 0;color:#e3b399;border:5px solid #f69679;border-radius:50%;-webkit-transition:.2s;transition:.2s;cursor:pointer}
 .fa-user-circle:hover{-webkit-box-shadow:1px 2px 2px 2px rgba(0,0,0,0.2);box-shadow:1px 2px 2px 2px rgba(0,0,0,0.2)}
-@-webkit-keyframes oPacity{0%{opacity:0}
-100%{opacity:1}
-}@keyframes oPacity{0%{opacity:0}
-100%{opacity:1}
-}
