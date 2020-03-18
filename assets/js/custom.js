@@ -9,7 +9,7 @@ function openMenu() {
     sideMenu.style.display = "block";
     setTimeout(function () {
       sideMenu.style.right = "0";
-    }, 0);
+    }, 100);
   };
 }
 

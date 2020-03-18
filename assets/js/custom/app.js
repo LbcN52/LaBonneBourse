@@ -7,7 +7,7 @@ function openMenu(){
         sideMenu.style.display = "block";
         setTimeout(() => {
             sideMenu.style.right = "0"
-        }, 0);
+        }, 100);
     }
 }
 openMenu()

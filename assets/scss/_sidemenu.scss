@@ -1,8 +1,8 @@
 .sidemenu {
+    display: none;
     position: fixed;
     z-index: 1;
-    //right: -100%;
-    right: 0;
+    right: -100%;
     top: 0;
     width: 300px;
     height: 100vh;
