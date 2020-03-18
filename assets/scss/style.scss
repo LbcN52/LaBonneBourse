@@ -1,0 +1,154 @@
+@import "reset";
+
+@import "vars";
+
+@import "footer";
+
+/*animations*/
+
+@keyframes oPacity{
+  0%{opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* placeholders */
+
+%box-parameters{
+	margin: 0 30px 0 30px;
+	background: $SecondColor;
+	border: 4px solid $ThirdColor;
+	border-radius: 20px;
+	transition: 0.2s;
+}
+
+body, html{
+	overflow: hidden;
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+	background: rgb(203,248,235);
+	background: -moz-radial-gradient(circle, rgba(203,248,235,1) 0%, rgba(153,227,216,1) 35%);
+	background: -webkit-radial-gradient(circle, rgba(203,248,235,1) 0%, rgba(153,227,216,1) 35%);
+	background: radial-gradient(circle, rgba(203,248,235,1) 0%, rgba(153,227,216,1) 35%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbf8eb",endColorstr="#99e3d8",GradientType=1);
+	animation: oPacity 3s ease-in-out;
+
+		h1{
+			background: $SecondColor;
+			text-align: center;
+			color: $FontColor;
+			font-size: 35px;
+			text-transform: uppercase;
+			border: 4px solid $ThirdColor;
+			margin: 30px 380px 0 380px;
+			border-radius: 10px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+		}
+}
+
+/* container */
+
+#container1{
+	margin-top: 130px;
+	height: 270px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+}
+
+#box1{
+	@extend %box-parameters;
+	grid-column: 2;
+	grid-row: 1;
+
+	&:hover{
+		box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	}
+
+	a{
+		text-decoration: none;
+	}
+}
+
+#box2{
+	@extend %box-parameters;
+	grid-column: 3;
+	grid-row: 1;
+
+	&:hover{
+		@extend #box1:hover;
+	}
+
+	a{
+		text-decoration: none;
+	}
+}
+
+#box3{
+	@extend %box-parameters;
+	grid-column: 4;
+	grid-row: 1;
+
+	&:hover{
+		@extend #box1:hover;
+	}
+
+	a{
+		text-decoration: none;
+	}
+}
+
+
+.top{
+	height: 60px;
+	background: $ThirdColor;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	p{
+		font-size: 25px;
+		color: $FontColor;
+		text-align: center;
+		padding-top: 15px;
+	}
+}
+
+.circle{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	height: 140px;
+	width: 140px;
+	background: $ThirdColor;
+	border-radius: 50%;
+
+	img{
+		width: 95%;
+		height: 95%;
+		transition: 0.2s;
+	}
+
+	img:hover{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.fa-user-circle{
+	font-size: 60px;
+	float: right;
+	margin: -60px 50px 0 0;
+	color: $ThirdColor;
+	border: 5px solid $SecondColor;
+	border-radius: 50%;
+	transition: 0.2s;
+	cursor: pointer;
+
+	&:hover{
+		box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	}
+}
