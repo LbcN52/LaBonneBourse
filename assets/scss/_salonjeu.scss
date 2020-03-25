@@ -1,0 +1,124 @@
+/* éléments pour le salon de jeu */
+
+#profil{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 100px;
+	margin: -60px 0 0 50px;
+	background: $ThirdColor;
+	border: 4px solid $SecondColor;
+	border-radius: 20px;
+	box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: 35px;
+		left: 150px;
+		width: 80px;
+		height: 80px;
+		background: $SecondColor;
+		border-radius: 50%;
+		box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	}
+	.top2{
+		height: 60px;
+		background: $SecondColor;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		p{
+			font-size: 25px;
+			color: $FontColor;
+			padding: 20px 0 0 15px;
+			.fa-sign-out-alt{
+				text-decoration: none;
+				margin-right: 5px;
+				color: $FontColor;
+				transition: 0.2s;
+				&:hover{
+					font-size: 30px;
+				}
+			}
+		}
+	}
+	#argent p{
+		font-size: 20px;
+		color: $FontColor;
+		padding: 10px 0 0 15px;
+	}
+}
+
+#joueurs{
+	float: right;
+	width: 150px;
+	height: 200px;
+	margin: -60px 50px 0 0;
+	background: $SecondColor;
+	border: 4px solid $ThirdColor;
+	border-radius: 20px;
+	box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	ul{
+		list-style-type: none;
+		color: $FontColor;
+		padding-top: 10px;
+		#player1:before{
+			content: '■';
+			margin-right: 10px;
+			color: green;
+			font-size: 20px;
+			padding: 0 0 0 10px;
+		}
+		#player2:before{
+			@extend #player1:before;
+			color: blue;
+		}
+		#player3:before{
+			@extend #player1:before;
+			color: red;
+		}
+		#player4:before{
+			@extend #player1:before;
+			color: yellow;
+		}
+		#player5:before{
+			@extend #player1:before;
+			color: black;
+		}
+		#player6:before{
+			@extend #player1:before;
+			color: white;
+		}
+	}
+}
+
+#container2{
+	position: relative;
+	bottom: 70px;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	.info{
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 25px;
+		color: $FontColor;
+	}
+	.btninfo{
+		font-size: 20px;
+		text-decoration: none;
+		margin: 20px auto 0 auto;
+		padding: 5px 10px 5px 10px;
+		border: 3px solid $ThirdColor;
+		color: $FontColor;
+		background: $SecondColor;
+		border-radius: 10px;
+		transition: 0.2s;
+		&:hover{
+			box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+			font-size: 22px;
+			background: $ThirdColor;
+			border: 3px solid $SecondColor;
+		}
+	}
+}
