@@ -1,0 +1,59 @@
+/* pop-up */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 100;
+  background: $SecondColor;
+  width: 500px;
+  height: 370px;
+  max-width: 80%;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  &.active {
+  	transform: translate(-50%, -50%) scale(1);
+	}
+	.modal-header {
+	  padding: 10px 15px;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  background: $ThirdColor;
+	  border-top-left-radius: 10px;
+	  border-top-right-radius: 10px; 
+	  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	  .title {
+		  font-size: 1.25rem;
+		  font-weight: bold;
+		  color: $FontColor;
+		}
+	  .close-button {
+		  cursor: pointer;
+		  border: none;
+		  outline: none;
+		  background: none;
+		  font-size: 1.25rem;
+		  font-weight: bold;
+		  color: $FontColor;
+		}
+	}
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  pointer-events: none;
+  &.active {
+  opacity: 1;
+  pointer-events: all;
+	}
+}
