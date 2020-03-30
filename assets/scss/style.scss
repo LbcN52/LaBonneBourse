@@ -30,11 +30,9 @@ body, html{
 	overflow: hidden;
 	height: 100%;
 	font-family: 'Raleway', sans-serif;
-	background: rgb(203,248,235);
-	background: -moz-radial-gradient(circle, rgba(203,248,235,1) 0%, rgba(153,227,216,1) 35%);
-	background: -webkit-radial-gradient(circle, rgba(203,248,235,1) 0%, rgba(153,227,216,1) 35%);
-	background: radial-gradient(circle, rgba(203,248,235,1) 0%, rgba(153,227,216,1) 35%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbf8eb",endColorstr="#99e3d8",GradientType=1);
+	background-image: url('../img/fond.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 	animation: oPacity 3s ease-in-out;
 	h1{
 		background: $SecondColor;
