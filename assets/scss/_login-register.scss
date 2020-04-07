@@ -55,5 +55,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
+        textarea{
+            grid-column: 1/3;
+            background: none;
+            border: $SecondColor 2px solid;
+            color: $FontColor;
+        }
     }
 }
