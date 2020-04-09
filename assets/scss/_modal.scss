@@ -57,3 +57,21 @@
   pointer-events: all;
 	}
 }
+
+#modal2{
+	@extend .modal;
+	height: 400px;
+	table {
+	  width: 100%;
+	  color: $FontColor;
+		td, th {
+		  border: none;
+		  text-align: left;
+		  padding: 8px;
+		  text-align: center;
+		}
+		tr:nth-child(even) {
+	  	  background-color: $ThirdColor;
+		}
+	}
+}
