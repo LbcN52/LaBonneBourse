@@ -1,0 +1,80 @@
+.account-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    .account-card {
+        color: $ThirdColor;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        background: $FontColor;
+        width: 400px;
+        border-radius: 5px;
+        border: solid $MainColor 3px;
+        .account-picture {
+            display: flex;
+            justify-content: center;
+            img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+        h2 {
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .email {
+            text-align: center;
+            width: 100%;
+        }
+        input {
+            color: white;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+            border: none;
+            background: lighten($color: $FontColor, $amount: 10%);
+            &:focus {
+                outline-color: $SecondColor;
+            }
+        }
+        .password-edit {
+            margin-top: 3rem;
+            input:first-of-type {
+                margin-bottom: .5rem;
+            }
+        }
+        .pseudo-edit {
+            margin-top: 1rem;
+        }
+        button {
+            cursor: pointer;
+            margin-left: .5rem;
+            border-radius: 5px;
+            background: $SecondColor;
+            color: $FontColor;
+            border: none;
+            height: 31px;
+            padding: 0 1rem;
+        }
+        .edit-photo {
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            font-size: .9rem;
+            color: $FontColor;
+            border-radius: 5px;
+            padding: .5rem 1rem;
+            cursor: pointer;
+            background: $SecondColor;
+            width: fit-content;
+            margin-top: 1.5rem;
+            input[type="file"]{
+                display: none;
+            }
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}

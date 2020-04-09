@@ -63,6 +63,21 @@ footer .fa-youtube{left:160px;width:60px}
 .modal .modal-header .close-button{cursor:pointer;border:0;outline:0;background:0;font-size:1.25rem;font-weight:bold;color:#2c2c2c}
 #overlay{position:fixed;opacity:0;-webkit-transition:200ms ease-in-out;transition:200ms ease-in-out;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);pointer-events:none}
 #overlay.active{opacity:1;pointer-events:all}
+.account-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:5rem}
+.account-wrapper .account-card{color:#d0e2f2;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:3rem;background:#2c2c2c;width:400px;border-radius:5px;border:solid #7d9bab 3px}
+.account-wrapper .account-card .account-picture{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.account-wrapper .account-card .account-picture img{display:block;max-width:100%}
+.account-wrapper .account-card h2{font-size:1.1rem;text-align:center;margin:1.5rem 0 1rem 0}
+.account-wrapper .account-card .email{text-align:center;width:100%}
+.account-wrapper .account-card input{color:white;padding:.5rem 1rem;border-radius:5px;border:0;background:#464545}
+.account-wrapper .account-card input:focus{outline-color:#67a9d8}
+.account-wrapper .account-card .password-edit{margin-top:3rem}
+.account-wrapper .account-card .password-edit input:first-of-type{margin-bottom:.5rem}
+.account-wrapper .account-card .pseudo-edit{margin-top:1rem}
+.account-wrapper .account-card button{cursor:pointer;margin-left:.5rem;border-radius:5px;background:#67a9d8;color:#2c2c2c;border:0;height:31px;padding:0 1rem}
+.account-wrapper .account-card .edit-photo{margin:0 auto;font-family:Arial,sans-serif;font-size:.9rem;color:#2c2c2c;border-radius:5px;padding:.5rem 1rem;cursor:pointer;background:#67a9d8;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;margin-top:1.5rem}
+.account-wrapper .account-card .edit-photo input[type="file"]{display:none}
+.account-wrapper .account-card .edit-photo i{margin-right:5px}
 #container1 #box1,#container1 #box2,#container1 #box3{margin:0 30px 0 30px;background:#67a9d8;border:4px solid #d0e2f2;border-radius:20px;cursor:pointer;-webkit-transition:.2s;transition:.2s}
 body,html{overflow:hidden;height:100%;font-family:'Raleway',sans-serif;background-image:url("../img/fond.png");background-size:cover;background-repeat:no-repeat;-webkit-animation:oPacity 3s ease-in-out;animation:oPacity 3s ease-in-out}
 body h1,html h1{background:#67a9d8;text-align:center;color:#2c2c2c;font-size:35px;text-transform:uppercase;border:4px solid #d0e2f2;margin:30px 380px 0 380px;border-radius:10px;padding-top:5px;padding-bottom:5px;-webkit-box-shadow:1px 2px 2px 2px rgba(0,0,0,0.2);box-shadow:1px 2px 2px 2px rgba(0,0,0,0.2)}
